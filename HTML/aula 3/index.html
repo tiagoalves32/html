@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu HTML</title>
+    <style> 
+        h1 {
+            background: red;
+        }
+
+        p {
+            background: orange;
+        }
+
+        #cabeçalho-um {
+            background: pink;
+        }
+
+        .fundo-vermelho {
+            padding: 20px;
+            border-radius: 10px;
+        }
+    </style> <!--Tag <style> é uma tag usada para a aplicação de CSS-->
+    <!--Usamos a cerquilha e o nome do id para o estilizarmos em CSS-->
+    <!--Usamos um ponto e o nome da class para a estilizarmos em CSS -->
+    <!--NOTA: Quando abrimos um seletor de uma tag em CSS selecionamos automaticamente 
+    todas as tags iguais que o documento HTML possui.Por exemplo se selecionarmos a 
+    tag <p> de um documento HTML o estilo será aplicado em todas tags <p> que o 
+        documento possua.
+    -->
+</head>
+<body>
+    <h1 id="cabeçalho-um"  > <!--id é um atributo de tag e só pode ser usado uma única vez
+    não é permitido a repetição desse atributo-->
+        Vai vir aqui
+    </h1>
+    <h1 id="cabeçalho dois" class="fundo-vermelho" class="fundo-vermelho">
+    <!--class também é um atributo que pode ser repetido sem nenhum problema-->    
+        Vai vir aqui</h1>
+        <p>Um texto qualquer</p>
+</body>
+</html>
