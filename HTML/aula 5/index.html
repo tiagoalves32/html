@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tags</title>
+</head>
+<body>
+    <h1 style="background: red;">Cabeçalho</h1>
+    <p>
+
+        <strong>Lorem ipsum </strong>dolor sit amet 
+        <i>consectetur </i><!--<i> é a tag de itálico-->
+         <em>adipisicing</em><!--Emphasis é uma tag que coloca as letras em 
+        itálico também, mas ela tem um contexto semântico de dar uma ênfase 
+    a palavra ou texto em destaque.-->
+         elit. 
+         <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/strong" target="_blank">Reiciendis</a>
+         , illo, vel quis neque consectetur dignissimos blanditiis amet qui doloremque quam accusantium officia rerum quae quasi non
+         officiis soluta quas consequuntur!</p>
+         <!--A tag <a> é uma tag de link usamos target pra definir o tipo de redirecionamento
+            do link se quisermos apenas abrir o link em uma nova página ultilizamos
+        o _blank-->
+         <p><b>Lorem ipsum </b> dolor 
+            <a href="https://developer.mozilla.org/pt-BR/" target="_blank"><img src="https://tse1.mm.bing.net/th?id=OIP.X8C5v1qySSDPbtC0MXM9cQHaEK&pid=Api&P=0&h=180" alt="Logo da MDN" width="100" height="50"></a>
+            <!--A tag <img> é uma tag de imagens onde podemos usar vários atributos como width 
+            e height mas é recomendado usar uma class e trabalhar na tag <img> dentro da tag
+        <style> do CSS o atributo 'alt' é muito importante para nomearmos nossa imagem.
+            Também podemos colocar um link na tag <img> usando a tag <a>-->
+            sit<del> amet</del> <ins>azul </ins>consectetur adipisicing elit. 
+            <!--A tag <del> é uma tag de errata e a tag <ins> é a tag de inserção ou 
+                correção da errata.-->
+            
+                <q>Alias ipsa ducimus repellendus</q>
+                <!--A tag <q> é usada para destacar um trecho como uma citação de outra pessoa.-->
+             tenetur deleniti id. Unde velit, veritatis omnis ab quisquam quod quidem
+             illum praesentium 
+             <small>sapiente </small>
+              <!--A tag <small> é para colocar a palavra ou o texto nela inserido em letras
+                menores.-->
+             2 <sup>2</sup>
+             <!--A tag <sup> é uma tag muito usada pra representar a condicão matemática
+                de elevado.Resumindo sua função é subir a palavra,número ou texto onde ela
+            está inserida.-->
+            H<sub>2</sub>O
+            <!--A tag <sub> tem a função inversa da tag <sup> ou seja ela desce o que
+                está inserido nela.-->
+            
+             iste obcaecati ea eveniet? 
+            <code>console.log</code>
+            <!--A tag <code> é usada para aplicar o uso de uma fonte específica para 
+                descrever um código-->
+            </p>
+            
+            <pre><code>
+                var somaSubtracao;
+                function somaSubtracao(num1, num2) {
+                    if (somaSubtracao = "+") {
+                        return num1 + num2;
+                    } if (somaSubtracao === "-") {
+                        return num1 - num2;
+                    } else {
+                        return "nenhuma das opções";
+                    }
+                }
+                console.log(somaSubtracao);
+            </code></pre>
+            <!--A tag <pre> é usada para formatar o texto de um código deixando-o legível 
+                para se ler.Ela é usada em conjunto com a tag <code>-->
+            
+            
+            
+             <!--Bold vs. Strong
+Muitas vezes é confuso para novos desenvolvedores porque há tantas maneiras de expressar a mesma coisa em um website renderizado.
+ Bold e Strong são talvez um dos casos mais comuns. Porque usar <strong></strong> vs <b></b>? Você precisa digitar muito mais ao usar strong e ela produz o mesmo resultado, certo?
+
+Talvez não; strong é um estado lógico, e bold é um estado físico. Estados lógicos separam apresentação do conteúdo,
+ e ao fazer isso permitem que ele seja expresso de várias maneiras diferentes. Possivelmente em vez de renderizar um texto como negrito você queira renderizá-lo vermelho, ou num tamanho diferente, ou sublinhado, ou seja lá o que for. Faz mais sentido mudar as propriedades de apresentação de strong do que bold. Isto porque bold é um estado físico; não há separação entre a apresentação e o conteúdo, e fazer com que bold faça qualquer outra coisa diferente de deixar o texto em negrito seria confuso e ilógico.
+
+É importante notar que <b></b> tem outros usos, quando se quer chamar atenção sem aumentar a importância.-->
+
+<!--Emphasis vs. Strong
+Enquanto no HTML4, Strong simplesmente indicava uma ênfase mais forte,
+ em HTML5, o elemento é descrito como representando "uma forte importância para o seu conteúdo." Esta é uma importante distinção a se fazer. Enquanto Emphasis é usado para alterar o significado de uma sentença ("Eu amo cenouras" vs. "Eu amo cenouras"), Strong é usado para dar mais importância a porções de uma sentença (e.g., "Cuidado! Isso é muito perigoso."). Ambos Strong e Emphasis podem ser aninhados para aumentar o grau relativo de importância ou reforçar ênfase, 
+respectivamente.-->
+
+<blockquote cite="https://developer.mozilla.org/pt-BR/">
+    Aqui estou fazendo um bloco de citação
+</blockquote>
+<!--Não usamos <blockquote> dentro de tags <p>. O atributo 'cite' é usado para mostrar de onde
+    estou tirando a citação.-->
+
+</body>
+
+</html>
