@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .responsive-table {
+            max-width: 100%;
+            overflow-x: auto;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 800px;
+        }
+
+        table td, table th {
+          border: 1px solid rgb(10, 10, 10);  
+          padding: 5px;
+          text-align: left;
+        }
+
+       
+
+        table caption {
+            caption-side: bottom;
+            text-align: right;
+            font-style: italic;
+            font-size: 14px;
+            margin: 5px;
+
+        }
+
+        thead th, tfoot td {
+            background: gray;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit</p>
+
+   
+
+    <div class="responsive-table">
+        <table>
+            <caption>Uma descrição para a tabela</caption>
+            <thead>
+                <tr>
+                    <th>Título 1</th>
+                    <th>Título 2</th>
+                    <th>Título 3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Corpo 1</td>
+                    <td>Corpo 2</td>
+                    <td>Corpo 3</td>
+                </tr>
+                <tr>
+                    <td colspan="2">AQUI</td>
+                    <td>Corpo 3</td>
+        
+                </tr>
+                <tr>
+                    <td>Corpo 1</td>
+                    <td>Corpo 2</td>
+                    <td>Corpo 3</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2" rowspan="2"></td>
+                    <td>TOTAL: </td>
+                </tr>
+                <tr>
+                  <td>R$ 555</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</body>
+<!--A tag <table> é usada na criação de tabelas 
+    <thead> é o cabeçalho da tabela
+    <tr> são as linhas da tabela
+    <th> são as colunas da tabela
+    <tbody> é o corpo da tabela
+    <td> é usado para as linhas do corpo da tabela
+    <tfoot> é o rodapé da tabela
+    O atributo 'colspan' é usado para aumentar o número de colunas
+    que uma célula da tabela ocupa
+    O atributo 'rowspan' é usado para aumentar o número de linhas 
+    que uma célula da tabela ocupa-->
+</html>
