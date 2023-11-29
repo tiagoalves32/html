@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas em HTML</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+       
+        nav {
+            
+            display: flex;
+            background: red; 
+        }
+
+        nav a {
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+            text-transform: uppercase;
+            color: white;
+            display: block;
+            padding: 10px 15px;
+        }
+
+        nav a:hover {
+            background: rgba(0, 0, 0, 0.3);
+    
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            margin-left: 10px;
+        }
+
+       
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li> <a href="#">Products</a></li>
+        </ul>
+    </nav>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+    <!--A tag <ul> é uma tag de lista não ordenada ('Unordered List')
+        as listas não ordenadas são usadas na criação de menus-->
+
+        <ol type="1" start="5">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ol>
+        <!--A tag <ol> também é uma tag de lista,porém é usada para
+            listas ordenadas ('Ordered List')-->
+        <!--'type' é para definir o tipo de ordenagem da lista como por
+        exemplo em números ordinários ou números romanos e etc...
+        Já 'start' é para definir a partir de onde a lista vai começar'-->
+        <dl>
+            <dt>Café</dt>
+            <dd>Bebida preta quente</dd>
+        </dl>
+        <!--A tag <dl> é uma tag de lista,mais precisamente uma lista 
+        descritiva ('Description List') -->
+</body>
+</html>
