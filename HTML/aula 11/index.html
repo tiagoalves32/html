@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        label {
+           cursor:pointer; 
+        }
+    </style>
+</head>
+<body>
+    
+        <form action="#" method="get" target="-blank" autocomplete="off">
+            <p>O meu formulário</p> 
+            <p>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome">
+            </p>  
+
+            <p>
+                <label for="dev">Sou um dev</label>
+                <input type="checkbox" id="dev" name="dev">
+            </p> 
+            
+            Gênero: <br>
+            <label for="masculino">Masculino</label>
+            <input type="radio" id="masculino" name="genero" value="masculino">
+            <label for="feminino">Feminino</label>
+            <input type="radio" id="feminino" name="genero" value="feminino">
+            <label for="outros">Outros</label>
+            <input type="radio" id="outros" name="genero" value="outros">
+            <p>
+                <button type="submit">Enviar</button>
+                <button type="reset">Reset</button>
+            </p>
+        </form>
+   
+</body>
+<!--A tag <form> é a tag usada para criar formulários.
+Atributos do input: 'type': Muito importante pois define o comportamento
+do input de qual tipo ele será,text para texto number para números e assim
+por diante.
+'id': É usado para fazer o link dos textos usados no formulário com
+a 'label do input.
+'name': É o nome do <input> é mais usado no back-end para o recebimento de dados inseridos 
+no formulário. 
+NOTA: O 'id e o 'name' também são usados como seletores CSS.
+'Placeholder': É usado para identificar o campo do formulário por exemplo: Seu nome,
+Seu e-mail etc...
+Atributos da tag <button>: 'Submit' é usado para enviar os dados do formulário.
+'Reset': é usado para resetar para os valores padrão do formulário.
+A tag <label> é usada para interagir com o input do formulário usamos o atributo 'for'
+para atrelar o nosso input à um label para isso usamos o nome do nosso 'id.'-->
+
+</html>
