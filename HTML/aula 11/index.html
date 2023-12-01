@@ -31,6 +31,92 @@
             <input type="radio" id="feminino" name="genero" value="feminino">
             <label for="outros">Outros</label>
             <input type="radio" id="outros" name="genero" value="outros">
+           
+
+            <p>
+                <label for="date">Data:</label>
+                <input type="date" id="date" name="date" value="2020-04-20">
+            </p>
+
+            <p>
+                <label for="datetime">Data:</label>
+                <input type="datetime-local" id="datetime" name="datetime" value="2020-04-20T19:50">
+            </p>
+
+            <p>
+                <label for="time">Hora:</label>
+                <input type="time" id="time" name="time" value="19:50:05">
+            </p>
+
+            <p>
+                <label for="cor">Cor Preferida:</label>
+                <input type="color" id="cor" name="cor" value="#8F3A84" >
+            </p>
+
+            <p>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email"
+                placeholder="ex.: email@email.com">
+            </p>
+
+            <p>
+                <label for="file">Sua foto:</label>
+                <input type="file" name="file" id="file" accept=".png, .svg,image/*"
+                multiple>
+            </p>
+
+            <p>
+                <label for="number">Número:</label>
+                <input type="number" name="number" id="number" min="10" max="30" step="5">
+            </p>
+
+            <p>
+                <label for="password">Senha:</label>
+                <input type="password" name="password" id="password"
+                placeholder="Digite sua senha">
+            </p>
+
+            <p>
+                <label for="range">Range:</label>
+                <input type="range" name="range" id="range" list="values">
+                <datalist id="values">
+                    <option value="0" label="very cold!"></option>
+                    <option value="25" label="cool"></option>
+                    <option value="50" label="medium"></option>
+                    <option value="75" label="getting warm!"></option>
+                    <option value="100" label="hot!"></option>
+                  </datalist>
+
+            </p>
+
+            <p>
+                <label for="url">Sua url:</label>
+                <input type="url" name="url" id="url" placeholder="URL">
+            </p>
+
+            <p>
+                <label for="search">Sua url:</label>
+                <input type="search" name="search" id="search" placeholder="search">
+            </p>
+
+            <p>
+                 
+                    <label for="select">Selecione alguma opção:</label>
+                    <select name="select" id="select">
+                        <optgroup label="Teste">
+                            <option value="qualquer 1" label="label 1"></option>
+                            <option value="qualquer 2" label="label 2"></option>
+                            <option value="qualquer 3" label="label 3"></option>
+                            <option value="qualquer 4" label="label 4"></option>
+                        </optgroup>
+                    </select>
+            </p>
+
+            <p>
+                <label for="textarea"></label>
+                <textarea name="textarea" id="textarea" cols="3" rows="4"></textarea>
+            </p>
+
             <p>
                 <button type="submit">Enviar</button>
                 <button type="reset">Reset</button>
