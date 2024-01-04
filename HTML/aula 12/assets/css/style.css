@@ -1,5 +1,43 @@
-.caixa {
-    background: red;
-    height: 120px;
-    width: 120px;
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*
+h1, p {
+    color: purple;
+}
+
+Seleção de descendência
+Nota: Nesse tipo de seleção o elemento selecionado sempre será o último
+
+
+Usamos a vírgula para adicionar mais de um elemento ao seletor.
+
+body div section p,
+body div section h1
+ {
+    color: red;
+}
+*/
+/*
+Seleção por classe
+Nota: Usamos o ponto e o nome da classe para criar o seletor.
+*/
+.heading {
+    color: red;
+}
+
+/*Selecionando mais de uma classe em um seletor*/
+
+.main-content .heading {
+    font-style: italic;
+    color: purple;
+}
+
+/*Seletor descendente de classes*/
+
+div.main-content h2.heading {
+    font-style: italic;
+    color: purple;
 }
