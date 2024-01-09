@@ -41,3 +41,9 @@ div.main-content h2.heading {
     font-style: italic;
     color: purple;
 }
+
+/*Seletor child*/
+
+.pai > .filha > .filha {
+    color: red;
+}
