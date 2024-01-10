@@ -24,26 +24,49 @@ body div section h1
 Seleção por classe
 Nota: Usamos o ponto e o nome da classe para criar o seletor.
 */
+/*
 .heading {
     color: red;
 }
 
-/*Selecionando mais de uma classe em um seletor*/
+Selecionando mais de uma classe em um seletor
 
 .main-content .heading {
     font-style: italic;
     color: purple;
 }
 
-/*Seletor descendente de classes*/
+Seletor descendente de classes
 
 div.main-content h2.heading {
     font-style: italic;
     color: purple;
 }
 
-/*Seletor child*/
+Seletor child
 
 .pai > .filha > .filha {
     color: red;
 }
+*/
+/*Adjacent sibling selector
+.pai h1+p {
+    color: red;
+}
+
+.pai p+h1 {
+    color: yellow;
+}
+*/
+
+/*General sibling selector
+.pai h1~p {
+    color: red;
+}
+*/
+/*Seletor de atributo
+[meu-atributo] {
+  color:red; 
+}
+*/
+
